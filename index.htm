@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en-us" xml:lang="en-us">
+<head>
+    <title>2018 Spring - IS 219002: Starter index.html file for Bootstrap</title>
+    <link rel="shortcut icon" href="http://njit2.mrooms.net/theme/image.php/boost/theme/1517466283/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="keywords" content="moodle, 2018 Spring - IS 219002: Starter index.html file for Bootstrap" />
+<link rel="stylesheet" type="text/css" href="http://njit2.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://njit2.mrooms.net/theme/styles.php/boost/1517466283/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/njit2.mrooms.net","sesskey":"Akl0lRc8dZ","themerev":"1517466283","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1517466283","admin":"admin","svgicons":true,"usertimezone":"America\/New_York","contextid":898354,"context":898354,"contextpath":"\/1\/876304\/877339\/898354","imgcontextpath":"___2_876304_877339_898354"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"http:\/\/njit2.mrooms.net\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/njit2.mrooms.net\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/njit2.mrooms.net\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/njit2.mrooms.net\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/njit2.mrooms.net\/theme\/yui_combo.php?m\/1517466283\/","combine":true,"comboBase":"http:\/\/njit2.mrooms.net\/theme\/yui_combo.php?","ext":false,"root":"m\/1517466283\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-core_outcome-models":{"requires":["base","model","model-list","moodle-core_outcome-simpleio","json-stringify"]},"moodle-core_outcome-outcomepanel":{"requires":["base","handlebars","moodle-core_outcome-models","moodle-core_outcome-scrollpanel","moodle-core_outcome-ariacontrol","moodle-core_outcome-ariacontrolled","moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core_outcome-simpleio"]},"moodle-core_outcome-ariacontrol":{"requires":["plugin","widget","escape"]},"moodle-core_outcome-ariacontrolled":{"requires":["plugin","widget"]},"moodle-core_outcome-simpleio":{"requires":["base","io-base","json-parse","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core_outcome-dynamicpanel":{"requires":["base","moodle-core_outcome-simpleio","classnamemanager","moodle-core-notification-dialogue","moodle-core_outcome-scrollpanel"]},"moodle-core_outcome-scrollpanel":{"requires":["plugin","widget","panel"]},"moodle-core_outcome-mapoutcome":{"requires":["widget","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core_outcome-outcomepanel","moodle-core-notification-exception"]},"moodle-core_outcome-mapoutcomeset":{"requires":["widget","model","model-list","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core-notification-dialogue","moodle-core-notification-exception","moodle-core-notification-alert","moodle-core_outcome-simpleio"]},"moodle-core_outcome-editoutcome":{"requires":["widget","event-valuechange","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_releasecode-form":{"requires":["base","node","event","event-valuechange","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_hsuforum-livelog":{"requires":["widget"]},"moodle-mod_hsuforum-article":{"requires":["base","node","event","router","core_rating","querystring","moodle-mod_hsuforum-io","moodle-mod_hsuforum-livelog","moodle-core-formchangechecker"]},"moodle-mod_hsuforum-io":{"requires":["base","io-base","io-form","io-upload-iframe","json-parse"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_gapps-popup":{"requires":["base","event"]},"moodle-block_gapps-gmail":{"requires":["base","event","handlebars"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-format_folderview-sectiontoggle":{"requires":["base","event","io","moodle-local_mr-livelog"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-report_outcome-autocomplete":{"requires":["base","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-report_outcome-resetoptions":{"requires":["base","moodle-core_outcome-simpleio"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-tool_mrooms-siteuserschart":{"requires":["base","node","event-resize"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bsgrid-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_chemistry-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_count-button":{"requires":["io","json-parse","moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_filedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_hr-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_htmlplus-codemirror":{"requires":["moodle-atto_htmlplus-codemirror-skin"]},"moodle-atto_htmlplus-beautify":{},"moodle-atto_htmlplus-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_htmlplus-beautify","moodle-atto_htmlplus-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_imagedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_kalturamedia-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]},"moodle-local_kaltura-lticontainer":{"requires":["base","node"]},"moodle-local_kaltura-ltitinymcepanel":{"requires":["base","node","panel","node-event-simulate"]},"moodle-local_kaltura-ltipanel":{"requires":["base","node","panel","node-event-simulate"]},"moodle-local_kaltura-ltiservice":{"requires":["base","node","node-event-simulate"]}}},"gallery":{"name":"gallery","base":"http:\/\/njit2.mrooms.net\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/njit2.mrooms.net\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1517466283\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/njit2.mrooms.net\/lib\/javascript.php\/1517466283\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"http:\/\/njit2.mrooms.net\/lib\/javascript.php\/1517466283\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.1\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-mod-resource-view" class="format-weeks  path-mod path-mod-resource safari dir-ltr lang-en_us yui-skin-sam yui3-skin-sam njit2-mrooms-net pagelayout-incourse course-21424 context-898354 cmid-638195 category-170 drawer-open-left">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="http://njit2.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="http://njit2.mrooms.net/lib/javascript.php/1517466283/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  aria-label=""></i><span class="sr-only">Side panel</span></button>
+            </div>
+    
+            <a href="http://njit2.mrooms.net" class="navbar-brand has-logo
+                    ">
+                    <span class="logo hidden-xs-down">
+                        <img src="http://njit2.mrooms.net/pluginfile.php/1/core_admin/logocompact/0x70/1517466283/poGnSyE2_400x400.jpg" alt="NJIT Moodle">
+                    </span>
+                <span class="site-name hidden-sm-down">NJIT Moodle</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <div class="dropdown d-inline">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Elizabeth Gaspar</span><span class="avatars"><span class="avatar current"><img src="http://njit2.mrooms.net/theme/image.php/boost/core/1517466283/u/f2" alt="Picture of Elizabeth Gaspar" title="Picture of Elizabeth Gaspar" class="userpicture defaultuserpic" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="http://njit2.mrooms.net/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><i class="icon fa fa-tachometer fa-fw " aria-hidden="true" title="Dashboard" aria-label="Dashboard"></i><span class="menu-action-text" id="actionmenuaction-1">Dashboard</span></a><div class="dropdown-divider"></div><a href="http://njit2.mrooms.net/user/profile.php?id=21580" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><i class="icon fa fa-user fa-fw " aria-hidden="true" title="Profile" aria-label="Profile"></i><span class="menu-action-text" id="actionmenuaction-2">Profile</span></a><a href="http://njit2.mrooms.net/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><i class="icon fa fa-table fa-fw " aria-hidden="true" title="Grades" aria-label="Grades"></i><span class="menu-action-text" id="actionmenuaction-3">Grades</span></a><a href="http://njit2.mrooms.net/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Messages" aria-label="Messages"></i><span class="menu-action-text" id="actionmenuaction-4">Messages</span></a><a href="http://njit2.mrooms.net/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Preferences" aria-label="Preferences"></i><span class="menu-action-text" id="actionmenuaction-5">Preferences</span></a><div class="dropdown-divider"></div><a href="http://njit2.mrooms.net/login/logout.php?sesskey=Akl0lRc8dZ" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><i class="icon fa fa-sign-out fa-fw " aria-hidden="true" title="Log out" aria-label="Log out"></i><span class="menu-action-text" id="actionmenuaction-6">Log out</span></a>
+        </div>
+</div>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages"
+    id="nav-message-popover-container" data-userid="21580"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5a78b4765060a5a78b4762838712"
+        aria-haspopup="true"
+        aria-label="Show message window with no new messages"
+        tabindex="0">
+                <i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Toggle messages menu" aria-label="Toggle messages menu"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5a78b4765060a5a78b4762838712"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Messages</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+            <a href="http://njit2.mrooms.net/message/index.php?contactsfirst=1">New message
+            </a>
+        </div>
+        <a class="mark-all-read-button"
+           href="#"
+           role="button"
+           title="Mark all as read"
+           data-action="mark-all-read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="http://njit2.mrooms.net/theme/image.php/boost/core/1517466283/y/loading" /></span>
+        </a>
+        <a href="http://njit2.mrooms.net/message/edit.php?id=21580"
+           title="Message preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Message preferences" aria-label="Message preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">No messages</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="http://njit2.mrooms.net/theme/image.php/boost/core/1517466283/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="http://njit2.mrooms.net/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="21580"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5a78b47651baa5a78b4762838713"
+        aria-haspopup="true"
+        aria-label="Show notification window with no new notifications"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true" title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5a78b47651baa5a78b4762838713"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="http://njit2.mrooms.net/theme/image.php/boost/core/1517466283/y/loading" /></span>
+        </a>
+        <a href="http://njit2.mrooms.net/message/notificationpreferences.php?userid=21580"
+           title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="http://njit2.mrooms.net/theme/image.php/boost/core/1517466283/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="http://njit2.mrooms.net/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                <a class="nav-item nav-link" href="http://ist.njit.edu/servicedesk/" title="IST Service Desk">IST Service Desk</a><a class="nav-item nav-link" href="http://njit2.mrooms.net/course/view.php?id=882" title="Faculty Help Page">Faculty Help Page</a><div class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-5a78b4765262f5a78b4762838714" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        Student Help
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-5a78b4765262f5a78b4762838714">
+                <a class="dropdown-item" href="http://njit2.mrooms.net/course/view.php?id=3048" title="Student Practice Course">Student Practice Course</a>
+                <a class="dropdown-item" href="http://njit2.mrooms.net/course/view.php?id=883" title="Student Tutorials">Student Tutorials</a>
+    </div>
+</div>
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="pull-xs-left"><div class="page-context-header"><div class="page-header-headings"><h1>18 S - IS 219002-Adv Website Development</h1></div></div></div><div class="clearfix w-100 pull-xs-left" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="http://njit2.mrooms.net/" >Home</a></li>
+                <li class="breadcrumb-item">My courses</li>
+                <li class="breadcrumb-item"><a href="http://njit2.mrooms.net/course/view.php?id=21424" title="18 S - IS 219002-Adv Website Development">2018 Spring - IS 219002</a></li>
+                <li class="breadcrumb-item"><a href="http://njit2.mrooms.net/course/view.php?id=21424#section-4" >Feb 5</a></li>
+                <li class="breadcrumb-item"><a href="http://njit2.mrooms.net/mod/resource/view.php?id=638195" title="File">Starter index.html file for Bootstrap</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button pull-xs-right"></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <section id="region-main" >
+                    <div class="card card-block">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Starter index.html file for Bootstrap</h2><div class="resourcecontent resourcegeneral">
+  <iframe id="resourceobject" src="http://njit2.mrooms.net/pluginfile.php/898354/mod_resource/content/3/index.html?embed=1">
+    Click <a href="http://njit2.mrooms.net/pluginfile.php/898354/mod_resource/content/3/index.html" >index.html</a> link to view the file.
+  </iframe>
+</div><div id="resourceintro" class="box mod_introbox p-y-1"><div class="no-overflow"><p>This is an example/starter index.php file for optional use on your Bootstrap site. Copy it to the root directory of your bootstrap folder, commit it to github, and deploy on Heroku to see this file work. </p></div></div></div>
+                    
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex " aria-hidden="false" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424" data-key="coursehome">
+                <div class="m-l-0">
+                        2018 Spring - IS 219002
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/user/index.php?id=21424" data-key="participants">
+                <div class="m-l-0">
+                        Participants
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/badges/view.php?type=2&amp;id=21424" data-key="badgesview">
+                <div class="m-l-0">
+                        Badges
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/admin/tool/lp/coursecompetencies.php?courseid=21424" data-key="competencies">
+                <div class="m-l-0">
+                        Competencies
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/grade/report/index.php?id=21424" data-key="grades">
+                <div class="m-l-0">
+                        Grades
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-0" data-key="282856">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">General</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-1" data-key="299259">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Jan 15</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-2" data-key="299260">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Jan 22</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-3" data-key="299261">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Jan 29</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="http://njit2.mrooms.net/course/view.php?id=21424#section-4" data-key="299262">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Feb 5</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-5" data-key="299263">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Feb 12</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-6" data-key="299264">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Feb 19</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-7" data-key="299265">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Feb 26</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-8" data-key="299266">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Mar 5 (Canceled; No Class)</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-9" data-key="299267">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Mar 12 (Spring Break; No Class)</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-10" data-key="299268">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Mar 19</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-11" data-key="299269">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Mar 26</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-12" data-key="299270">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Apr 2</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-13" data-key="299271">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Apr 9</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-14" data-key="299272">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Apr 16</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-15" data-key="299273">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Apr 23</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-16" data-key="299274">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Apr 30</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424#section-17" data-key="299275">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Finals Week - NOT Meeting</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/local/kalturamediagallery/index.php?courseid=21424" data-key="kalturacoursegallerylink-mycourses">
+                <div class="m-l-0">
+                        Kaltura Media Gallery
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/" data-key="home">
+                <div class="m-l-0">
+                        Home
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/my/" data-key="home">
+                <div class="m-l-0">
+                        Dashboard
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/local/mymedia/mymedia.php" data-key="mymedia">
+                <div class="m-l-0">
+                        My Media
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        Calendar
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/user/files.php" data-key="privatefiles">
+                <div class="m-l-0">
+                        Private files
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/local/intelliboard/student/index.php" data-key="intelliboard_student">
+                <div class="m-l-0">
+                        Learner Dashboard
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    My courses
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21424" data-key="21424">
+                <div class="m-l-1">
+                        2018 Spring - IS 219002
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21439" data-key="21439">
+                <div class="m-l-1">
+                        2018 Spring - IS 373002
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21440" data-key="21440">
+                <div class="m-l-1">
+                        2018 Spring - IS 375002
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21441" data-key="21441">
+                <div class="m-l-1">
+                        2018 Spring - IS 390102
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=21095" data-key="21095">
+                <div class="m-l-1">
+                        2018 Spring - YWCC 207012
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=17316" data-key="17316">
+                <div class="m-l-1">
+                        2017 Fall - ENTR 410101
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=17178" data-key="17178">
+                <div class="m-l-1">
+                        2017 Fall - IS 350003
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=14137" data-key="14137">
+                <div class="m-l-1">
+                        2017 Spring - ENG 340004
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=15458" data-key="15458">
+                <div class="m-l-1">
+                        1718_SS_Elecs
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://njit2.mrooms.net/course/view.php?id=22365" data-key="22365">
+                <div class="m-l-1">
+                        IS375-Moodle-Usability
+                </div>
+            </a>
+        </nav>
+    </div>
+</div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+
+        <div class="logininfo">You are logged in as <a href="http://njit2.mrooms.net/user/profile.php?id=21580" title="View profile">Elizabeth Gaspar</a> (<a href="http://njit2.mrooms.net/login/logout.php?sesskey=Akl0lRc8dZ">Log out</a>)</div>
+        <div class="homelink"><a href="http://njit2.mrooms.net/course/view.php?id=21424">2018 Spring - IS 219002</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                                    <li><a href="http://ist.njit.edu/servicedesk/" title="IST Service Desk">IST Service Desk</a></li>
+                                    <li><a href="http://njit2.mrooms.net/course/view.php?id=882" title="Faculty Help Page">Faculty Help Page</a></li>
+                                    <li>Student Help</li>
+                                <li>
+                                    <ul class="list-unstyled m-l-1">
+                                                        <li><a href="http://njit2.mrooms.net/course/view.php?id=3048" title="Student Practice Course">Student Practice Course</a></li>
+                                                        <li><a href="http://njit2.mrooms.net/course/view.php?id=883" title="Student Tutorials">Student Tutorials</a></li>
+                                    </ul>
+                                </li>
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://njit2.mrooms.net/lib/requirejs.php/1517466283/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'http://njit2.mrooms.net/lib/javascript.php/1517466283/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'http://njit2.mrooms.net/lib/javascript.php/1517466283/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'http://njit2.mrooms.net/lib/javascript.php/1517466283/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="http://njit2.mrooms.net/lib/javascript.php/1517466283/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(898354, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="http://njit2.mrooms.net/lib/javascript.php/1517466283/local/intelliboard/module.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","ok":"OK","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() { M.util.js_pending('random5a78b476283871'); Y.on('domready', function() { M.util.init_maximised_embed(Y, "resourceobject");  M.util.js_complete('random5a78b476283871'); });
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\n\n\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+intelliboardInit(Y, {"intelliboardAjax":30,"intelliboardAjaxUrl":"http:\/\/njit2.mrooms.net\/local\/intelliboard\/ajax.php","intelliboardInactivity":60,"intelliboardPeriod":1000});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5a78b4762838715'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5a78b4762838715'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"06560f3a30","applicationID":"5367022,2985054,6084072","transactionName":"YFxbZkVQW0ZRARBaDlkWbEBeHlhaVE0WVhJYTEtRUh5DXFUVSkMJRw==","queueTime":0,"applicationTime":267,"atts":"TBtMEA1KSBkSA0YJGkpE","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
